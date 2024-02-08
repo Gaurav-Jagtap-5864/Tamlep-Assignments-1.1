@@ -1,0 +1,240 @@
+Script started on 2024-01-25 14:12:17+05:30 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="64" LINES="31"]
+[?2004h(base) ]0;root@TIGER04334: ~root@TIGER04334:~# [7msudo apt get install git[27msudo apt get install git
+[?2004l[1;31mE: [0mInvalid operation get[0m
+[?2004h(base) ]0;root@TIGER04334: ~root@TIGER04334:~# git version-version-version
+[?2004lgit version 2.34.1
+[?2004h(base) ]0;root@TIGER04334: ~root@TIGER04334:~# [7mgit config --list --show-origin[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgit config --list --show-origin
+[?2004l[?1h=file:/root/.gitconfig   user.name=Gaurav Jagtap[m
+file:/root/.gitconfig   user.email=gaurav.jagtap@tigeranalytics.[m com[m
+[K[?1l>[?2004h(base) ]0;root@TIGER04334: ~root@TIGER04334:~# [7mgit config --list[27mgit config --list
+[?2004l[?1h=user.name=Gaurav Jagtap[m
+user.email=gaurav.jagtap@tigeranalytics.com[m
+[K[?1l>[?2004h(base) ]0;root@TIGER04334: ~root@TIGER04334:~# git help
+[?2004lusage: git [--version] [--help] [-C <path>] [-c <name>=<value>]
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
+           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]
+           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
+           [--super-prefix=<path>] [--config-env=<name>=<envvar>]
+           <command> [<args>]
+
+These are common Git commands used in various situations:
+
+start a working area (see also: git help tutorial)
+   clone     Clone a repository into a new directory
+   init      Create an empty Git repository or reinitialize an existing one
+
+work on the current change (see also: git help everyday)
+   add       Add file contents to the index
+   mv        Move or rename a file, a directory, or a symlink
+   restore   Restore working tree files
+   rm        Remove files from the working tree and from the index
+
+examine the history and state (see also: git help revisions)
+   bisect    Use binary search to find the commit that introduced a bug
+   diff      Show changes between commits, commit and working tree, etc
+   grep      Print lines matching a pattern
+   log       Show commit logs
+   show      Show various types of objects
+   status    Show the working tree status
+
+grow, mark and tweak your common history
+   branch    List, create, or delete branches
+   commit    Record changes to the repository
+   merge     Join two or more development histories together
+   rebase    Reapply commits on top of another base tip
+   reset     Reset current HEAD to the specified state
+   switch    Switch branches
+   tag       Create, list, delete or verify a tag object signed with GPG
+
+collaborate (see also: git help workflows)
+   fetch     Download objects and refs from another repository
+   pull      Fetch from and integrate with another repository or a local branch
+   push      Update remote refs along with associated objects
+
+'git help -a' and 'git help -g' list available subcommands and some
+concept guides. See 'git help <command>' or 'git help <concept>'
+to read about a specific subcommand or concept.
+See 'git help git' for an overview of the system.
+[?2004h(base) ]0;root@TIGER04334: ~root@TIGER04334:~# [7mgit help <verb>[27mgit help <verb>
+[?2004lbash: syntax error near unexpected token `newline'
+[?2004h(base) ]0;root@TIGER04334: ~root@TIGER04334:~# git help confiq[Kg
+[?2004l[?1049h[22;0;0t[?1h=GIT-CONFIG(1)             Git Manual             GIT-CONFIG(1)[m
+[m
+[1mNAME[0m[m
+       git-config - Get and set repository or global options[m
+[m
+[1mSYNOPSIS[0m[m
+       [4mgit[24m [4mconfig[24m [<file-option>] [--type=<type>] [--fixed-value[m ] [--show-origin] [--show-scope] [-z|--null] name [value [value-[m pattern]][m
+       [4mgit[24m [4mconfig[24m [<file-option>] [--type=<type>] --add name val[m ue[m
+       [4mgit[24m [4mconfig[24m [<file-option>] [--type=<type>Script started on 2024-01-26 12:29:41+05:30 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="64" LINES="31"]
+[?2004h(base) ]0;root@TIGER04334: ~root@TIGER04334:~# git help config<verb>[Kconfig --list --show-origin[18P--version
+[?2004lgit version 2.34.1
+[?2004h(base) ]0;root@TIGER04334: ~root@TIGER04334:~# git --versionhelp config
+[?2004l[?1049h[22;0;0t[?1h=GIT-CONFIG(1)             Git Manual             GIT-CONFIG(1)[m
+[m
+[1mNAME[0m[m
+       git-config - Get and set repository or global options[m
+[m
+[1mSYNOPSIS[0m[m
+       [4mgit[24m [4mconfig[24m [<file-option>] [--type=<type>] [--fixed-value[m ] [--show-origin] [--show-scope] [-z|--null] name [value [value-[m pattern]][m
+       [4mgit[24m [4mconfig[24m [<file-option>] [--type=<type>] --add name val[m ue[m
+       [4mgit[24m [4mconfig[24m [<file-option>] [--type=<type>] [--fixed-value[m ] --replace-all name value [value-pattern][m
+       [4mgit[24m [4mconfig[24m [<file-option>] [--type=<type>] [--show-origin[m ] [--show-scope] [-z|--null] [--fixed-value] --get name [value-p[m attern][m
+       [4mgit[24m [4mconfig[24m [<file-option>] [--type=<type>] [--show-origin[m ] [--show-scope] [-z|--null] [--fixed-value] --get-all name [val[m ue-pattern][m
+       [4mgit[24m [4mconfig[24m [<file-option>] [--type=<type>] [--show-origin[m ] [--show-scope] [-z|--null] [--fixed-value] [--name-only] --get[m -regexp name_regex [value-pattern][m
+       [4mgit[24m [4mconfig[24m [<file-option>] [--type=<type>] [-z|--null] --[m get-urlmatch name URL[m
+       [4mgit[24m [4mconfig[24m [<file-option>] [--fixed-value] --unset name [[m value-pattern][m
+       [4mgit[24m [4mconfig[24m [<file-option>] [--fixed-value] --unset-all na[m me [value-pattern][m
+       [4mgit[24m [4mconfig[24m [<file-option>] --rename-section old_name new_[m name[m
+[7mnual page git-config(1) line 1 (press h for help or q to quit)[27m[K[K[?1l>[?1049l[23;0;0t[?2004h(base) ]0;root@TIGER04334: ~root@TIGER04334:~# git help config[2P--versionhelp config<verb>[Kconfig --list
+[?2004l[?1h=user.name=Gaurav Jagtap[m
+user.email=gaurav.jagtap@tigeranalytics.com[m
+[K[?1l>[?2004h(base) ]0;root@TIGER04334: ~root@TIGER04334:~# cd "Tample[K[K[K[Kmp[Klep Traing[K[K[Kining"
+[?2004l[?2004h(base) ]0;root@TIGER04334: ~/Tamlep Trainingroot@TIGER04334:~/Tamlep Training# git init
+[?2004lReinitialized existing Git repository in /root/Tamlep Training/.git/
+[?2004h(base) ]0;root@TIGER04334: ~/Tamlep Trainingroot@TIGER04334:~/Tamlep Training# [7mgit clone https://gith[27m[7mu[27m[7mb.com/libgit2/libgit2 mylibgit[27m[A(base) ]0;root@TIGER04334: ~/Tamlep Trainingroot@TIGER04334:~/Tamlep Training# git clone https://github.com/libgit2/libgit2 mylibgit
+[?2004lCloning into 'mylibgit'...
+remote: Enumerating objects: 126201, done.[K
+remote: Counting objects:   0% (1/126201)[Kremote: Counting objects:   1% (1263/126201)[Kremote: Counting objects:   2% (2525/126201)[Kremote: Counting objects:   3% (3787/126201)[Kremote: Counting objects:   4% (5049/126201)[Kremote: Counting objects:   5% (6311/126201)[Kremote: Counting objects:   6% (7573/126201)[Kremote: Counting objects:   7% (8835/126201)[Kremote: Counting objects:   8% (10097/126201)[Kremote: Counting objects:   9% (11359/126201)[Kremote: Counting objects:  10% (12621/126201)[Kremote: Counting objects:  11% (13883/126201)[Kremote: Counting objects:  12% (15145/126201)[Kremote: Counting objects:  13% (16407/126201)[Kremote: Counting objects:  14% (17669/126201)[Kremote: Counting objects:  15% (18931/126201)[Kremote: Counting objects:  16% (20193/126201)[Kremote: Counting objects:  17% (21455/126201)[Kremote: Counting objects:  18% (22717/126201)[Kremote: Counting objects:  19% (23979/126201)[Kremote: Counting objects:  20% (25241/126201)[Kremote: Counting objects:  21% (26503/126201)[Kremote: Counting objects:  22% (27765/126201)[Kremote: Counting objects:  23% (29027/126201)[Kremote: Counting objects:  24% (30289/126201)[Kremote: Counting objects:  25% (31551/126201)[Kremote: Counting objects:  26% (32813/126201)[Kremote: Counting objects:  27% (34075/126201)[Kremote: Counting objects:  28% (35337/126201)[Kremote: Counting objects:  29% (36599/126201)[Kremote: Counting objects:  30% (37861/126201)[Kremote: Counting objects:  31% (39123/126201)[Kremote: Counting objects:  32% (40385/126201)[Kremote: Counting objects:  33% (41647/126201)[Kremote: Counting objects:  34% (42909/126201)[Kremote: Counting objects:  35% (44171/126201)[Kremote: Counting objects:  36% (45433/126201)[Kremote: Counting objects:  37% (46695/126201)[Kremote: Counting objects:  38% (47957/126201)[Kremote: Counting objects:  39% (49219/126201)[Kremote: Counting objects:  40% (50481/126201)[Kremote: Counting objects:  41% (51743/126201)[Kremote: Counting objects:  42% (53005/126201)[Kremote: Counting objects:  43% (54267/126201)[Kremote: Counting objects:  44% (55529/126201)[Kremote: Counting objects:  45% (56791/126201)[Kremote: Counting objects:  46% (58053/126201)[Kremote: Counting objects:  47% (59315/126201)[Kremote: Counting objects:  48% (60577/126201)[Kremote: Counting objects:  49% (61839/126201)[Kremote: Counting objects:  50% (63101/126201)[Kremote: Counting objects:  51% (64363/126201)[Kremote: Counting objects:  52% (65625/126201)[Kremote: Counting objects:  53% (66887/126201)[Kremote: Counting objects:  54% (68149/126201)[Kremote: Counting objects:  55% (69411/126201)[Kremote: Counting objects:  56% (70673/126201)[Kremote: Counting objects:  57% (71935/126201)[Kremote: Counting objects:  58% (73197/126201)[Kremote: Counting objects:  59% (74459/126201)[Kremote: Counting objects:  60% (75721/126201)[Kremote: Counting objects:  61% (76983/126201)[Kremote: Counting objects:  62% (78245/126201)[Kremote: Counting objects:  63% (79507/126201)[Kremote: Counting objects:  64% (80769/126201)[Kremote: Counting objects:  65% (82031/126201)[Kremote: Counting objects:  66% (83293/126201)[Kremote: Counting objects:  67% (84555/126201)[Kremote: Counting objects:  68% (85817/126201)[Kremote: Counting objects:  69% (87079/126201)[Kremote: Counting objects:  70% (88341/126201)[Kremote: Counting objects:  71% (89603/126201)[Kremote: Counting objects:  72% (90865/126201)[Kremote: Counting objects:  73% (92127/126201)[Kremote: Counting objects:  74% (93389/126201)[Kremote: Counting objects:  75% (94651/126201)[Kremote: Counting objects:  76% (95913/126201)[Kremote: Counting objects:  77% (97175/126201)[Kremote: Counting objects:  78% (98437/126201)[Kremote: Counting objects:  79% (99699/126201)[Kremote: Counting objects:  80% (100961/126201)[Kremote: Counting objects:  81% (102223/126201)[Kremote: Counting objects:  82% (103485/126201)[Kremote: Counting objects:  83% (104747/126201)[Kremote: Counting objects:  84% (106009/126201)[Kremote: Counting objects:  85% (107271/126201)[Kremote: Counting objects:  86% (108533/126201)[Kremote: Counting objects:  87% (109795/126201)[Kremote: Counting objects:  88% (111057/126201)[Kremote: Counting objects:  89% (112319/126201)[Kremote: Counting objects:  90% (113581/126201)[Kremote: Counting objects:  91% (114843/126201)[Kremote: Counting objects:  92% (116105/126201)[Kremote: Counting objects:  93% (117367/126201)[Kremote: Counting objects:  94% (118629/126201)[Kremote: Counting objects:  95% (119891/126201)[Kremote: Counting objects:  96% (121153/126201)[Kremote: Counting objects:  97% (122415/126201)[Kremote: Counting objects:  98% (123677/126201)[Kremote: Counting objects:  99% (124939/126201)[Kremote: Counting objects: 100% (126201/126201)[Kremote: Counting objects: 100% (126201/126201), done.[K
+remote: Compressing objects:   0% (1/34682)[Kremote: Compressing objects:   1% (347/34682)[Kremote: Compressing objects:   2% (694/34682)[Kremote: Compressing objects:   3% (1041/34682)[Kremote: Compressing objects:   4% (1388/34682)[Kremote: Compressing objects:   5% (1735/34682)[Kremote: Compressing objects:   6% (2081/34682)[Kremote: Compressing objects:   7% (2428/34682)[Kremote: Compressing objects:   8% (2775/34682)[Kremote: Compressing objects:   9% (3122/34682)[Kremote: Compressing objects:  10% (3469/34682)[Kremote: Compressing objects:  11% (3816/34682)[Kremote: Compressing objects:  12% (4162/34682)[Kremote: Compressing objects:  13% (4509/34682)[Kremote: Compressing objects:  14% (4856/34682)[Kremote: Compressing objects:  15% (5203/34682)[Kremote: Compressing objects:  16% (5550/34682)[Kremote: Compressing objects:  17% (5896/34682)[Kremote: Compressing objects:  18% (6243/34682)[Kremote: Compressing objects:  19% (6590/34682)[Kremote: Compressing objects:  20% (6937/34682)[Kremote: Compressing objects:  21% (7284/34682)[Kremote: Compressing objects:  22% (7631/34682)[Kremote: Compressing objects:  23% (7977/34682)[Kremote: Compressing objects:  24% (8324/34682)[Kremote: Compressing objects:  25% (8671/34682)[Kremote: Compressing objects:  26% (9018/34682)[Kremote: Compressing objects:  27% (9365/34682)[Kremote: Compressing objects:  28% (9711/34682)[Kremote: Compressing objects:  29% (10058/34682)[Kremote: Compressing objects:  30% (10405/34682)[Kremote: Compressing objects:  31% (10752/34682)[Kremote: Compressing objects:  32% (11099/34682)[Kremote: Compressing objects:  33% (11446/34682)[Kremote: Compressing objects:  34% (11792/34682)[Kremote: Compressing objects:  35% (12139/34682)[Kremote: Compressing objects:  36% (12486/34682)[Kremote: Compressing objects:  37% (12833/34682)[Kremote: Compressing objects:  38% (13180/34682)[Kremote: Compressing objects:  39% (13526/34682)[Kremote: Compressing objects:  40% (13873/34682)[Kremote: Compressing objects:  41% (14220/34682)[Kremote: Compressing objects:  42% (14567/34682)[Kremote: Compressing objects:  43% (14914/34682)[Kremote: Compressing objects:  44% (15261/34682)[Kremote: Compressing objects:  45% (15607/34682)[Kremote: Compressing objects:  46% (15954/34682)[Kremote: Compressing objects:  47% (16301/34682)[Kremote: Compressing objects:  48% (16648/34682)[Kremote: Compressing objects:  49% (16995/34682)[Kremote: Compressing objects:  50% (17341/34682)[Kremote: Compressing objects:  51% (17688/34682)[Kremote: Compressing objects:  52% (18035/34682)[Kremote: Compressing objects:  53% (18382/34682)[Kremote: Compressing objects:  54% (18729/34682)[Kremote: Compressing objects:  55% (19076/34682)[Kremote: Compressing objects:  56% (19422/34682)[Kremote: Compressing objects:  57% (19769/34682)[Kremote: Compressing objects:  58% (20116/34682)[Kremote: Compressing objects:  59% (20463/34682)[Kremote: Compressing objects:  60% (20810/34682)[Kremote: Compressing objects:  61% (21157/34682)[Kremote: Compressing objects:  62% (21503/34682)[Kremote: Compressing objects:  63% (21850/34682)[Kremote: Compressing objects:  64% (22197/34682)[Kremote: Compressing objects:  65% (22544/34682)[Kremote: Compressing objects:  66% (22891/34682)[Kremote: Compressing objects:  67% (23237/34682)[Kremote: Compressing objects:  68% (23584/34682)[Kremote: Compressing objects:  69% (23931/34682)[Kremote: Compressing objects:  70% (24278/34682)[Kremote: Compressing objects:  71% (24625/34682)[Kremote: Compressing objects:  72% (24972/34682)[Kremote: Compressing objects:  73% (25318/34682)[Kremote: Compressing objects:  74% (25665/34682)[Kremote: Compressing objects:  75% (26012/34682)[Kremote: Compressing objects:  76% (26359/34682)[Kremote: Compressing objects:  77% (26706/34682)[Kremote: Compressing objects:  78% (27052/34682)[Kremote: Compressing objects:  79% (27399/34682)[Kremote: Compressing objects:  80% (27746/34682)[Kremote: Compressing objects:  81% (28093/34682)[Kremote: Compressing objects:  82% (28440/34682)[Kremote: Compressing objects:  83% (28787/34682)[Kremote: Compressing objects:  84% (29133/34682)[Kremote: Compressing objects:  85% (29480/34682)[Kremote: Compressing objects:  86% (29827/34682)[Kremote: Compressing objects:  87% (30174/34682)[Kremote: Compressing objects:  88% (30521/34682)[Kremote: Compressing objects:  89% (30867/34682)[Kremote: Compressing objects:  90% (31214/34682)[Kremote: Compressing objects:  91% (31561/34682)[Kremote: Compressing objects:  92% (31908/34682)[Kremote: Compressing objects:  93% (32255/34682)[Kremote: Compressing objects:  94% (32602/34682)[Kremote: Compressing objects:  95% (32948/34682)[Kremote: Compressing objects:  96% (33295/34682)[Kremote: Compressing objects:  97% (33642/34682)[Kremote: Compressing objects:  98% (33989/34682)[Kremote: Compressing objects:  99% (34336/34682)[Kremote: Compressing objects: 100% (34682/34682)[Kremote: Compressing objects: 100% (34682/34682), done.[K
+Receiving objects:   0% (1/126201)Receiving objects:   1% (1263/126201)Receiving objects:   2% (2525/126201)Receiving objects:   3% (3787/126201)Receiving objects:   4% (5049/126201)Receiving objects:   5% (6311/126201)Receiving objects:   6% (7573/126201)Receiving objects:   7% (8835/126201)Receiving objects:   8% (10097/126201)Receiving objects:   9% (11359/126201), 3.21 MiB | 4.50 MiB/sReceiving objects:  10% (12621/126201), 3.21 MiB | 4.50 MiB/sReceiving objects:  11% (13883/126201), 3.21 MiB | 4.50 MiB/sReceiving objects:  12% (15145/126201), 3.21 MiB | 4.50 MiB/sReceiving objects:  13% (16407/126201), 3.21 MiB | 4.50 MiB/sReceiving objects:  14% (17669/126201), 3.21 MiB | 4.50 MiB/sReceiving objects:  15% (18931/126201), 3.21 MiB | 4.50 MiB/sReceiving objects:  16% (20193/126201), 3.21 MiB | 4.50 MiB/sReceiving objects:  17% (21455/126201), 3.21 MiB | 4.50 MiB/sReceiving objects:  17% (21516/126201), 3.21 MiB | 4.50 MiB/sReceiving objects:  18% (22717/126201), 3.21 MiB | 4.50 MiB/sReceiving objects:  19% (23979/126201), 3.21 MiB | 4.50 MiB/sReceiving objects:  20% (25241/126201), 3.21 MiB | 4.50 MiB/sReceiving objects:  21% (26503/126201), 6.96 MiB | 5.72 MiB/sReceiving objects:  22% (27765/126201), 6.96 MiB | 5.72 MiB/sReceiving objects:  23% (29027/126201), 6.96 MiB | 5.72 MiB/sReceiving objects:  24% (30289/126201), 9.85 MiB | 5.73 MiB/sReceiving objects:  25% (31551/126201), 9.85 MiB | 5.73 MiB/sReceiving objects:  26% (32813/126201), 9.85 MiB | 5.73 MiB/sReceiving objects:  26% (33515/126201), 9.85 MiB | 5.73 MiB/sReceiving objects:  27% (34075/126201), 9.85 MiB | 5.73 MiB/sReceiving objects:  28% (35337/126201), 12.86 MiB | 5.79 MiB/sReceiving objects:  29% (36599/126201), 12.86 MiB | 5.79 MiB/sReceiving objects:  30% (37861/126201), 12.86 MiB | 5.79 MiB/sReceiving objects:  31% (39123/126201), 15.38 MiB | 5.65 MiB/sReceiving objects:  32% (40385/126201), 15.38 MiB | 5.65 MiB/sReceiving objects:  32% (40501/126201), 15.38 MiB | 5.65 MiB/sReceiving objects:  33% (41647/126201), 15.38 MiB | 5.65 MiB/sReceiving objects:  34% (42909/126201), 15.38 MiB | 5.65 MiB/sReceiving objects:  35% (44171/126201), 15.38 MiB | 5.65 MiB/sReceiving objects:  36% (45433/126201), 18.59 MiB | 5.77 MiB/sReceiving objects:  37% (46695/126201), 18.59 MiB | 5.77 MiB/sReceiving objects:  37% (47206/126201), 21.38 MiB | 5.74 MiB/sReceiving objects:  38% (47957/126201), 24.20 MiB | 5.72 MiB/sReceiving objects:  38% (48811/126201), 27.02 MiB | 5.72 MiB/sReceiving objects:  39% (49219/126201), 27.02 MiB | 5.72 MiB/sReceiving objects:  40% (50481/126201), 27.02 MiB | 5.72 MiB/sReceiving objects:  41% (51743/126201), 29.81 MiB | 5.89 MiB/sReceiving objects:  42% (53005/126201), 29.81 MiB | 5.89 MiB/sReceiving objects:  43% (54267/126201), 32.54 MiB | 5.67 MiB/sReceiving objects:  43% (54315/126201), 32.54 MiB | 5.67 MiB/sReceiving objects:  44% (55529/126201), 35.26 MiB | 5.63 MiB/sReceiving objects:  45% (56791/126201), 35.26 MiB | 5.63 MiB/sReceiving objects:  46% (58053/126201), 37.38 MiB | 5.44 MiB/sReceiving objects:  47% (59315/126201), 37.38 MiB | 5.44 MiB/sReceiving objects:  48% (60577/126201), 37.38 MiB | 5.44 MiB/sReceiving objects:  49% (61839/126201), 37.38 MiB | 5.44 MiB/sReceiving objects:  49% (62107/126201), 37.38 MiB | 5.44 MiB/sReceiving objects:  50% (63101/126201), 37.38 MiB | 5.44 MiB/sReceiving objects:  51% (64363/126201), 37.38 MiB | 5.44 MiB/sReceiving objects:  52% (65625/126201), 37.38 MiB | 5.44 MiB/sReceiving objects:  53% (66887/126201), 40.68 MiB | 5.61 MiB/sReceiving objects:  54% (68149/126201), 40.68 MiB | 5.61 MiB/sReceiving objects:  55% (69411/126201), 40.68 MiB | 5.61 MiB/sReceiving objects:  56% (70673/126201), 40.68 MiB | 5.61 MiB/sReceiving objects:  57% (71935/126201), 40.68 MiB | 5.61 MiB/sReceiving objects:  58% (73197/126201), 40.68 MiB | 5.61 MiB/sReceiving objects:  59% (74459/126201), 43.36 MiB | 5.49 MiB/sReceiving objects:  60% (75721/126201), 43.36 MiB | 5.49 MiB/sReceiving objects:  61% (76983/126201), 43.36 MiB | 5.49 MiB/sReceiving objects:  62% (78245/126201), 43.36 MiB | 5.49 MiB/sReceiving objects:  63% (79507/126201), 43.36 MiB | 5.49 MiB/sReceiving objects:  63% (80118/126201), 43.36 MiB | 5.49 MiB/sReceiving objects:  63% (80252/126201), 49.47 MiB | 5.60 MiB/sReceiving objects:  64% (80769/126201), 49.47 MiB | 5.60 MiB/sReceiving objects:  65% (82031/126201), 52.46 MiB | 5.63 MiB/sReceiving objects:  66% (83293/126201), 52.46 MiB | 5.63 MiB/sReceiving objects:  67% (84555/126201), 52.46 MiB | 5.63 MiB/sReceiving objects:  68% (85817/126201), 52.46 MiB | 5.63 MiB/sReceiving objects:  69% (87079/126201), 52.46 MiB | 5.63 MiB/sReceiving objects:  70% (88341/126201), 52.46 MiB | 5.63 MiB/sReceiving objects:  71% (89603/126201), 55.28 MiB | 5.63 MiB/sReceiving objects:  71% (90616/126201), 55.28 MiB | 5.63 MiB/sReceiving objects:  72% (90865/126201), 55.28 MiB | 5.63 MiB/sReceiving objects:  73% (92127/126201), 55.28 MiB | 5.63 MiB/sReceiving objects:  74% (93389/126201), 55.28 MiB | 5.63 MiB/sReceiving objects:  75% (94651/126201), 57.94 MiB | 5.62 MiB/sReceiving objects:  76% (95913/126201), 57.94 MiB | 5.62 MiB/sReceiving objects:  77% (97175/126201), 57.94 MiB | 5.62 MiB/sReceiving objects:  78% (98437/126201), 57.94 MiB | 5.62 MiB/sReceiving objects:  79% (99699/126201), 57.94 MiB | 5.62 MiB/sReceiving objects:  80% (100961/126201), 57.94 MiB | 5.62 MiB/sReceiving objects:  81% (102223/126201), 57.94 MiB | 5.62 MiB/sReceiving objects:  82% (103485/126201), 57.94 MiB | 5.62 MiB/sReceiving objects:  83% (104747/126201), 57.94 MiB | 5.62 MiB/sReceiving objects:  84% (106009/126201), 60.98 MiB | 5.69 MiB/sReceiving objects:  85% (107271/126201), 60.98 MiB | 5.69 MiB/sReceiving objects:  86% (108533/126201), 60.98 MiB | 5.69 MiB/sReceiving objects:  87% (109795/126201), 60.98 MiB | 5.69 MiB/sReceiving objects:  87% (109990/126201), 60.98 MiB | 5.69 MiB/sReceiving objects:  88% (111057/126201), 60.98 MiB | 5.69 MiB/sReceiving objects:  89% (112319/126201), 60.98 MiB | 5.69 MiB/sReceiving objects:  90% (113581/126201), 60.98 MiB | 5.69 MiB/sReceiving objects:  91% (114843/126201), 60.98 MiB | 5.69 MiB/sReceiving objects:  92% (116105/126201), 63.69 MiB | 5.81 MiB/sReceiving objects:  93% (117367/126201), 63.69 MiB | 5.81 MiB/sReceiving objects:  94% (118629/126201), 63.69 MiB | 5.81 MiB/sReceiving objects:  95% (119891/126201), 63.69 MiB | 5.81 MiB/sReceiving objects:  96% (121153/126201), 63.69 MiB | 5.81 MiB/sReceiving objects:  97% (122415/126201), 63.69 MiB | 5.81 MiB/sReceiving objects:  98% (123677/126201), 63.69 MiB | 5.81 MiB/sReceiving objects:  99% (124939/126201), 63.69 MiB | 5.81 MiB/sremote: Total 126201 (delta 89599), reused 126058 (delta 89467), pack-reused 0[K
+Receiving objects: 100% (126201/126201), 63.69 MiB | 5.81 MiB/sReceiving objects: 100% (126201/126201), 66.21 MiB | 5.67 MiB/s, done.
+Resolving deltas:   0% (0/89599)Resolving deltas:   1% (896/89599)Resolving deltas:   2% (1792/89599)Resolving deltas:   3% (2688/89599)Resolving deltas:   4% (3584/89599)Resolving deltas:   5% (4480/89599)Resolving deltas:   6% (5376/89599)Resolving deltas:   7% (6272/89599)Resolving deltas:   8% (7168/89599)Resolving deltas:   9% (8064/89599)Resolving deltas:  10% (8960/89599)Resolving deltas:  11% (9856/89599)Resolving deltas:  12% (10752/89599)Resolving deltas:  13% (11648/89599)Resolving deltas:  14% (12544/89599)Resolving deltas:  15% (13440/89599)Resolving deltas:  16% (14336/89599)Resolving deltas:  17% (15232/89599)Resolving deltas:  18% (16128/89599)Resolving deltas:  19% (17024/89599)Resolving deltas:  20% (17920/89599)Resolving deltas:  21% (18816/89599)Resolving deltas:  22% (19712/89599)Resolving deltas:  23% (20608/89599)Resolving deltas:  24% (21504/89599)Resolving deltas:  25% (22400/89599)Resolving deltas:  26% (23296/89599)Resolving deltas:  27% (24192/89599)Resolving deltas:  28% (25088/89599)Resolving deltas:  29% (25984/89599)Resolving deltas:  30% (26880/89599)Resolving deltas:  31% (27776/89599)Resolving deltas:  32% (28672/89599)Resolving deltas:  33% (29568/89599)Resolving deltas:  34% (30464/89599)Resolving deltas:  35% (31360/89599)Resolving deltas:  36% (32256/89599)Resolving deltas:  37% (33152/89599)Resolving deltas:  38% (34048/89599)Resolving deltas:  39% (34944/89599)Resolving deltas:  40% (35840/89599)Resolving deltas:  41% (36736/89599)Resolving deltas:  42% (37632/89599)Resolving deltas:  43% (38528/89599)Resolving deltas:  44% (39424/89599)Resolving deltas:  45% (40320/89599)Resolving deltas:  46% (41216/89599)Resolving deltas:  47% (42112/89599)Resolving deltas:  48% (43008/89599)Resolving deltas:  49% (43904/89599)Resolving deltas:  50% (44800/89599)Resolving deltas:  51% (45696/89599)Resolving deltas:  52% (46592/89599)Resolving deltas:  53% (47488/89599)Resolving deltas:  54% (48384/89599)Resolving deltas:  55% (49280/89599)Resolving deltas:  56% (50176/89599)Resolving deltas:  57% (51072/89599)Resolving deltas:  58% (51968/89599)Resolving deltas:  59% (52864/89599)Resolving deltas:  60% (53760/89599)Resolving deltas:  61% (54656/89599)Resolving deltas:  62% (55552/89599)Resolving deltas:  63% (56448/89599)Resolving deltas:  64% (57344/89599)Resolving deltas:  65% (58240/89599)Resolving deltas:  66% (59136/89599)Resolving deltas:  67% (60032/89599)Resolving deltas:  68% (60928/89599)Resolving deltas:  69% (61824/89599)Resolving deltas:  70% (62721/89599)Resolving deltas:  71% (63616/89599)Resolving deltas:  72% (64512/89599)Resolving deltas:  72% (64582/89599)Resolving deltas:  73% (65408/89599)Resolving deltas:  74% (66304/89599)Resolving deltas:  75% (67200/89599)Resolving deltas:  76% (68096/89599)Resolving deltas:  77% (68992/89599)Resolving deltas:  78% (69888/89599)Resolving deltas:  79% (70784/89599)Resolving deltas:  80% (71680/89599)Resolving deltas:  81% (72576/89599)Resolving deltas:  82% (73472/89599)Resolving deltas:  83% (74368/89599)Resolving deltas:  84% (75264/89599)Resolving deltas:  85% (76160/89599)Resolving deltas:  86% (77056/89599)Resolving deltas:  87% (77952/89599)Resolving deltas:  88% (78848/89599)Resolving deltas:  89% (79744/89599)Resolving deltas:  90% (80640/89599)Resolving deltas:  91% (81536/89599)Resolving deltas:  92% (82432/89599)Resolving deltas:  93% (83328/89599)Resolving deltas:  94% (84224/89599)Resolving deltas:  95% (85120/89599)Resolving deltas:  96% (86016/89599)Resolving deltas:  97% (86912/89599)Resolving deltas:  98% (87808/89599)Resolving deltas:  99% (88704/89599)Resolving deltas: 100% (89599/89599)Resolving deltas: 100% (89599/89599), done.
+[?2004h(base) ]0;root@TIGER04334: ~/Tamlep Trainingroot@TIGER04334:~/Tamlep Training# git status
+[?2004lOn branch enh/1/asgmnt1.2
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	[31mdeleted:    README.md[m
+	[31mdeleted:    README.md:Zone.Identifier[m
+	[31mdeleted:    env.yml[m
+	[31mdeleted:    my_git_session[m
+	[31mdeleted:    my_miniconda_session[m
+	[31mdeleted:    my_unix_session[m
+	[31mdeleted:    nonstandardcode.py[m
+	[31mdeleted:    nonstandardcode.py:Zone.Identifier[m
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	[31mAssignment1.1/[m
+	[31mAssignment1.2/[m
+	[31mmylibgit/[m
+
+no changes added to commit (use "git add" and/or "git commit -a")
+[?2004h(base) ]0;root@TIGER04334: ~/Tamlep Trainingroot@TIGER04334:~/Tamlep Training# cd "[Kmylibgit
+[?2004l[?2004h(base) ]0;root@TIGER04334: ~/Tamlep Training/mylibgitroot@TIGER04334:~/Tamlep Training/mylibgit# git status
+[?2004lOn branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+[?2004h(base) ]0;root@TIGER04334: ~/Tamlep Training/mylibgitroot@TIGER04334:~/Tamlep Training/mylibgit# [7mecho 'My Proj[27m[7me[27m[7mct' > README[27m[A(base) ]0;root@TIGER04334: ~/Tamlep Training/mylibgitroot@TIGER04334:~/Tamlep Training/mylibgit# echo 'My Project' > README
+[?2004l[?2004h(base) ]0;root@TIGER04334: ~/Tamlep Training/mylibgitroot@TIGER04334:~/Tamlep Training/mylibgit# [7mgit add READM[27m[7mE[27m[A(base) ]0;root@TIGER04334: ~/Tamlep Training/mylibgitroot@TIGER04334:~/Tamlep Training/mylibgit# git add README
+[?2004l[?2004h(base) ]0;root@TIGER04334: ~/Tamlep Training/mylibgitroot@TIGER04334:~/Tamlep Training/mylibgit# git status
+[?2004lOn branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	[32mnew file:   README[m
+
+[?2004h(base) ]0;root@TIGER04334: ~/Tamlep Training/mylibgitroot@TIGER04334:~/Tamlep Training/mylibgit# cat .gitignor e
+[?2004l/build/
+.DS_Store
+*~
+.*.swp
+/tags
+CMakeSettings.json
+.vs
+.idea
+[?2004h(base) ]0;root@TIGER04334: ~/Tamlep Training/mylibgitroot@TIGER04334:~/Tamlep Training/mylibgit# git diff
+[?2004l[?1h=[K[?1l>[?2004h(base) ]0;root@TIGER04334: ~/Tamlep Training/mylibgitroot@TIGER04334:~/Tamlep Training/mylibgit# git commit
+[?2004lhint: Waiting for your editor to close the file... [?2004h[?1049h[22;0;0t[1;31r(B[m[4l[?7h[39;49m[?1h=[?1h=[?25l[39;49m(B[m[H[2J[29;26H(B[0;7m[ Reading... ](B[m[29;24H(B[0;7m[ Read 10 lines ](B[m[H(B[0;7m   /root/Tamlep Training/mylibgit/.git/COMMIT_EDITMSG           [1;63H(B[m[30d(B[0;7m^G(B[m Help     (B[0;7m^O(B[m Write Out(B[0;7m^W(B[m Where Is (B[0;7m^K(B[m Cut[49G(B[0;7m^T(B[m Execute[31d(B[0;7m^X(B[m Exit     (B[0;7m^R(B[m Read File(B[0;7m^\(B[m Replace  (B[0;7m^U(B[m Paste    (B[0;7m^J(B[m Justify[3d[36m# Please enter the commit message for your changes. Lines start[39m(B[0;7m>[4;1H(B[0m[36m# with '#' will be ignored, and an empty message aborts the com[39m(B[0;7m>[5;1H(B[0m[36m#[6d# On branch main[7d# Your branch is up to date with 'origin/main'.[8d#[9d# Changes to be committed:[10d#[38;5;208m       [36mnew file:   README[11d#[2d[39m(B[m[?12l[?25h[?25l[29d[J[31d[?12l[?25h[31;1H[?1049l[23;0;0t[?1l>[?2004l[KAborting commit due to empty commit message.
+[?2004h(base) ]0;root@TIGER04334: ~/Tamlep Training/mylibgitroot@TIGER04334:~/Tamlep Training/mylibgit# cd ..
+[?2004l[?2004h(base) ]0;root@TIGER04334: ~/Tamlep Trainingroot@TIGER04334:~/Tamlep Training# [7mgit clone https://gith[27m[7mu[27m[7mb.com/schacon/simplegit-progit[27m[A(base) ]0;root@TIGER04334: ~/Tamlep Trainingroot@TIGER04334:~/Tamlep Training# git clone https://github.com/schacon/simplegit-progit
+[?2004lCloning into 'simplegit-progit'...
+remote: Enumerating objects: 13, done.[K
+remote: Total 13 (delta 0), reused 0 (delta 0), pack-reused 13[K
+Receiving objects:   7% (1/13)Receiving objects:  15% (2/13)Receiving objects:  23% (3/13)Receiving objects:  30% (4/13)Receiving objects:  38% (5/13)Receiving objects:  46% (6/13)Receiving objects:  53% (7/13)Receiving objects:  61% (8/13)Receiving objects:  69% (9/13)Receiving objects:  76% (10/13)Receiving objects:  84% (11/13)Receiving objects:  92% (12/13)Receiving objects: 100% (13/13)Receiving objects: 100% (13/13), done.
+Resolving deltas:   0% (0/3)Resolving deltas:  33% (1/3)Resolving deltas:  66% (2/3)Resolving deltas: 100% (3/3)Resolving deltas: 100% (3/3), done.
+[?2004h(base) ]0;root@TIGER04334: ~/Tamlep Trainingroot@TIGER04334:~/Tamlep Training# cd ""[7msimplegit-progit[27m"simplegit-progit"
+[?2004l[?2004h(base) ]0;root@TIGER04334: ~/Tamlep Training/simplegit-progitroot@TIGER04334:~/Tamlep Training/simplegit-progit# git l og
+[?2004l[?1h=[33mcommit ca82a6dff817ec66f44342007202690a93763949[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m,[m [33m[m[33m[m[1;36m[m[1;32m[m[33m [m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m)[m[m
+Author: Scott Chacon <schacon@gmail.com>[m
+Date:   Mon Mar 17 21:52:11 2008 -0700[m
+[m
+    changed the verison number[m
+[m
+[33mcommit 085bb3bcb608e1e8451d4b2432f8ecbe6306e7e7[m[m
+Author: Scott Chacon <schacon@gmail.com>[m
+Date:   Sat Mar 15 16:40:33 2008 -0700[m
+[m
+    removed unnecessary test code[m
+[m
+[33mcommit a11bef06a3f659402fe7563abf99ad00de2209e6[m[m
+Author: Scott Chacon <schacon@gmail.com>[m
+Date:   Sat Mar 15 10:31:28 2008 -0700[m
+[m
+    first commit[m
+[K[?1l>[?2004h(base) ]0;root@TIGER04334: ~/Tamlep Training/simplegit-progitroot@TIGER04334:~/Tamlep Training/simplegit-progit# [7mgit c[27m[7mo[27m[7mmmit -m 'Initial commit'[27m[A(base) ]0;root@TIGER04334: ~/Tamlep Training/simplegit-progitroot@TIGER04334:~/Tamlep Training/simplegit-progit# git commit -m 'Initial commit'
+[?2004lOn branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+[?2004h(base) ]0;root@TIGER04334: ~/Tamlep Training/simplegit-progitroot@TIGER04334:~/Tamlep Training/simplegit-progit# [7mgit a[27m[7md[27m[7md forgotten_file[27m[A(base) ]0;root@TIGER04334: ~/Tamlep Training/simplegit-progitroot@TIGER04334:~/Tamlep Training/simplegit-progit# git add forgotten_file
+[?2004lfatal: pathspec 'forgotten_file' did not match any files
+[?2004h(base) ]0;root@TIGER04334: ~/Tamlep Training/simplegit-progitroot@TIGER04334:~/Tamlep Training/simplegit-progit# [7mgit c[27m[7mo[27m[7mmmit --amend[27m[A(base) ]0;root@TIGER04334: ~/Tamlep Training/simplegit-progitroot@TIGER04334:~/Tamlep Training/simplegit-progit# git commit --amend
+[?2004lhint: Waiting for your editor to close the file... [?2004h[?1049h[22;0;0t[1;31r(B[m[4l[?7h[39;49m[?1h=[?1h=[?25l[39;49m(B[m[H[2J[29;26H(B[0;7m[ Reading... ](B[m[29;24H(B[0;7m[ Read 14 lines ](B[m[H(B[0;7m.../Tamlep Training/simplegit-progit/.git/COMMIT_EDITMSG        [1;64H(B[m[30d(B[0;7m^G(B[m Help     (B[0;7m^O(B[m Write Out(B[0;7m^W(B[m Where Is (B[0;7m^K(B[m Cut[49G(B[0;7m^T(B[m Execute[31d(B[0;7m^X(B[m Exit     (B[0;7m^R(B[m Read File(B[0;7m^\(B[m Replace  (B[0;7m^U(B[m Paste    (B[0;7m^J(B[m Justify[2dchanged the verison number[4d[36m# Please enter the commit message for your changes. Lines start[39m(B[0;7m>[5;1H(B[0m[36m# with '#' will be ignored, and an empty message aborts the com[39m(B[0;7m>[6;1H(B[0m[36m#[7d# Author:    Scott Chacon <schacon@gmail.com>[8d# Date:      Mon Mar 17 21:52:11 2008 -0700[9d#[10d# On branch master[11d# Your branch is up to date with 'origin/master'.[12d#[13d# Changes to be committed:[14d#[38;5;208m       [36mmodified:   Rakefile[15d#[2d[39m(B[m[?12l[?25h[?25l[29d[J[31d[?12l[?25h[31;1H[?1049l[23;0;0t[?1l>[?2004l[K[master c88de4a] changed the verison number
+ Author: Scott Chacon <schacon@gmail.com>
+ Date: Mon Mar 17 21:52:11 2008 -0700
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+[?2004h(base) ]0;root@TIGER04334: ~/Tamlep Training/simplegit-progitroot@TIGER04334:~/Tamlep Training/simplegit-progit# [7mgit r[27m[7me[27m[7mmote -v[27m[A(base) ]0;root@TIGER04334: ~/Tamlep Training/simplegit-progitroot@TIGER04334:~/Tamlep Training/simplegit-progit# git remote -v
+[?2004lorigin	https://github.com/schacon/simplegit-progit (fetch)
+origin	https://github.com/schacon/simplegit-progit (push)
+[?2004h(base) ]0;root@TIGER04334: ~/Tamlep Training/simplegit-progitroot@TIGER04334:~/Tamlep Training/simplegit-progit# i[Kgit t ag
+[?2004l[?1h=[K[?1l>[?2004h(base) ]0;root@TIGER04334: ~/Tamlep Training/simplegit-progitroot@TIGER04334:~/Tamlep Training/simplegit-progit# git b ranch testing
+[?2004l[?2004h(base) ]0;root@TIGER04334: ~/Tamlep Training/simplegit-progitroot@TIGER04334:~/Tamlep Training/simplegit-progit# git c heckout testing
+[?2004lSwitched to branch 'testing'
+[?2004h(base) ]0;root@TIGER04334: ~/Tamlep Training/simplegit-progitroot@TIGER04334:~/Tamlep Training/simplegit-progit# [7mgit b[27m[7mr[27m[7manch --all[27m[A(base) ]0;root@TIGER04334: ~/Tamlep Training/simplegit-progitroot@TIGER04334:~/Tamlep Training/simplegit-progit# git branch --all
+[?2004l[?1h=  master[m[m
+* [32mtesting[m[m
+  [31mremotes/origin/HEAD[m -> origin/master[m
+  [31mremotes/origin/master[m[m
+[K[?1l>[?2004h(base) ]0;root@TIGER04334: ~/Tamlep Training/simplegit-progitroot@TIGER04334:~/Tamlep Training/simplegit-progit# [7mgit p[27m[7mu[27m[7msh origin --delete master[27m[A(base) ]0;root@TIGER04334: ~/Tamlep Training/simplegit-progitroot@TIGER04334:~/Tamlep Training/simplegit-progit# git push origin --delete master
+[?2004l^[[A    
+Username for 'https://github.com': Password for 'https://github.com': 
+[?2004h(base) ]0;root@TIGER04334: ~/Tamlep Training/simplegit-progitroot@TIGER04334:~/Tamlep Training/simplegit-progit# cd .
+[?2004l[?2004h(base) ]0;root@TIGER04334: ~/Tamlep Training/simplegit-progitroot@TIGER04334:~/Tamlep Training/simplegit-progit# cd .. [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K.
+[?2004l[?2004h(base) ]0;root@TIGER04334: ~/Tamlep Trainingroot@TIGER04334:~/Tamlep Training# [7mgit clone https://gith[27m[7mu[27m[7mb.com/tonychacon/blink[27m[A(base) ]0;root@TIGER04334: ~/Tamlep Trainingroot@TIGER04334:~/Tamlep Training# git clone https://github.com/tonychacon/blink
+[?2004lCloning into 'blink'...
+remote: Enumerating objects: 23, done.[K
+remote: Total 23 (delta 0), reused 0 (delta 0), pack-reused 23[K
+Receiving objects:   4% (1/23)Receiving objects:   8% (2/23)Receiving objects:  13% (3/23)Receiving objects:  17% (4/23)Receiving objects:  21% (5/23)Receiving objects:  26% (6/23)Receiving objects:  30% (7/23)Receiving objects:  34% (8/23)Receiving objects:  39% (9/23)Receiving objects:  43% (10/23)Receiving objects:  47% (11/23)Receiving objects:  52% (12/23)Receiving objects:  56% (13/23)Receiving objects:  60% (14/23)Receiving objects:  65% (15/23)Receiving objects:  69% (16/23)Receiving objects:  73% (17/23)Receiving objects:  78% (18/23)Receiving objects:  82% (19/23)Receiving objects:  86% (20/23)Receiving objects:  91% (21/23)Receiving objects:  95% (22/23)Receiving objects: 100% (23/23)Receiving objects: 100% (23/23), done.
+Resolving deltas:   0% (0/5)Resolving deltas:  20% (1/5)Resolving deltas:  40% (2/5)Resolving deltas:  60% (3/5)Resolving deltas:  80% (4/5)Resolving deltas: 100% (5/5)Resolving deltas: 100% (5/5), done.
+[?2004h(base) ]0;root@TIGER04334: ~/Tamlep Trainingroot@TIGER04334:~/Tamlep Training# cd [K[K[Kls
+[?2004l[0m[01;34mAssignment1.1[0m  [01;34mAssignment1.2[0m  [01;34mblink[0m  [01;34mmylibgit[0m  [01;34msimplegit-progit[0m
+[?2004h(base) ]0;root@TIGER04334: ~/Tamlep Trainingroot@TIGER04334:~/Tamlep Training# cd blink
+[?2004l[?2004h(base) ]0;root@TIGER04334: ~/Tamlep Training/blinkroot@TIGER04334:~/Tamlep Training/blink# [7mgit checkout -b [27m[7ms[27m[7mlow-blink[27m[A(base) ]0;root@TIGER04334: ~/Tamlep Training/blinkroot@TIGER04334:~/Tamlep Training/blink# git checkout -b slow-blink
+[?2004lSwitched to a new branch 'slow-blink'
+[?2004h(base) ]0;root@TIGER04334: ~/Tamlep Training/blinkroot@TIGER04334:~/Tamlep Training/blink# [7msed -i 's/1000/3[27m[7m0[27m[7m00/' blink.ino[27m[A(base) ]0;root@TIGER04334: ~/Tamlep Training/blinkroot@TIGER04334:~/Tamlep Training/blink# sed -i 's/1000/3000/' blink.ino
+[?2004l[?2004h(base) ]0;root@TIGER04334: ~/Tamlep Training/blinkroot@TIGER04334:~/Tamlep Training/blink# [7mgit diff --word-[27m[7md[27m[7miff[27m[A(base) ]0;root@TIGER04334: ~/Tamlep Training/blinkroot@TIGER04334:~/Tamlep Training/blink# git diff --word-diff
+[?2004l[?1h=[1mdiff --git a/blink.ino b/blink.ino[m[m
+[1mindex 15b9911..a6cc5a5 100644[m[m
+[1m--- a/blink.ino[m[m
+[1m+++ b/blink.ino[m[m
+[36m@@ -18,7 +18,7 @@[m [mvoid setup() {[m[m
+// the loop routine runs over and over again forever:[m[m
+void loop() {[m[m
+  digitalWrite(led, HIGH);   // turn the LED on (HIGH is the vol[m tage level)[m[m
+  [31m[-delay(1000);-][m[32m{+delay(3000);+}[m               // wait for a s[m [31m[m[32m[mecond[m
+  digitalWrite(led, LOW);    // turn the LED off by making the v[m oltage LOW[m[m
+  [31m[-delay(1000);-][m[32m{+delay(3000);+}[m               // wait for a s[m [31m[m[32m[mecond[m
+}[m[m
+[K[?1l>[?2004h(base) ]0;root@TIGER04334: ~/Tamlep Training/blinkroot@TIGER04334:~/Tamlep Training/blink# [7mgit commit -a -m[27m[7m [27m[7m'Change delay to 3 seconds'[27m[A(base) ]0;root@TIGER04334: ~/Tamlep Training/blinkroot@TIGER04334:~/Tamlep Training/blink# git commit -a -m 'Change delay to 3 seconds'
+[?2004l[slow-blink 27c95f5] Change delay to 3 seconds
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+[?2004h(base) ]0;root@TIGER04334: ~/Tamlep Training/blinkroot@TIGER04334:~/Tamlep Training/blink# [7mgit push origin [27m[7ms[27m[7mlow-blink[27m[A(base) ]0;root@TIGER04334: ~/Tamlep Training/blinkroot@TIGER04334:~/Tamlep Training/blink# git push origin slow-blink
+[?2004lUsername for 'https://github.com': ^X  ^C
+[?2004h(base) ]0;root@TIGER04334: ~/Tamlep Training/blinkroot@TIGER04334:~/Tamlep Training/blink# exit
+[?2004lexit
+
+Script done on 2024-01-26 14:32:28+05:30 [COMMAND_EXIT_CODE="130"]
